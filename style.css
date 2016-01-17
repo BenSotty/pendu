@@ -1,0 +1,88 @@
+.play-section {
+  display : none;
+}
+
+.answer {
+   letter-spacing: 12px;
+}
+
+.dead-container {
+  position: relative;
+  width: 190px;
+  height: 250px;
+  color: #000;
+}
+
+.dead-part {
+  display : none;
+  position : absolute;
+  background-color : #000;
+}
+/* barre du bas */ 
+.dead-part.part-0 {
+  bottom : 0;
+  right : 0;
+  left : 0;
+  height: 1px;
+}
+/* barre verticale */
+.dead-part.part-1 {
+  bottom : 0;
+  right : 30px;
+  top : 0;
+  width: 1px;
+}
+/* barre du haut */
+.dead-part.part-2 {
+  top : 0;
+  right : 30px;
+  left : 30px;
+  height : 1px;
+}
+/* corde */
+.dead-part.part-3 {
+  top : 0;
+  left : 30px;
+  height : 50px;
+  width : 1px;
+}
+/* tête */
+.dead-part.part-4 {
+  top : 50px;
+  left : 20px;
+  height : 20px;
+  width : 20px;
+  border-radius : 20px;
+  border: solid 1px;
+  background-color : transparent;
+}
+/* corps */
+.dead-part.part-5 {
+  top : 71px;
+  left : 30px;
+  height : 60px;
+  width : 1px;
+}
+/* bras */
+.dead-part.part-6 {
+  top : 90px;
+  left : 0;
+  height : 1px;
+  width : 60px;
+}
+/* jambe 1 */
+.dead-part.part-7 {
+  top: 130px;
+  left: 23px;
+  height: 50px;
+  width: 1px;
+  transform: rotate(15deg);
+}
+/* jambe 2 */
+.dead-part.part-8 {
+  top: 130px;
+  left: 37px;
+  height: 50px;
+  width: 1px;
+  transform: rotate(-15deg);
+}

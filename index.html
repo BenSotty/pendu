@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Le jeu du pendu">
+    <meta name="author" content="Benjamin Sotty">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Le Jeu du pendu</h1>
+    <div id="game">
+      <!-- zone d'initialisation de la manche -->
+      <div id="init-section-game">
+        <input type="text" name="init-input" id="init-input-game" placeholder="solution" />
+        <button id="init-btn-game">Commencer</button>
+      </div>
+      <!-- L'aire de jeu -->
+      <div id="play-section-game" class="play-section">
+        <label for="test-letter">J'essaye une lettre</label>
+        <input type="text" size="1" maxlength="1" name="test-letter" id="test-letter-game" />
+        <button id="test-letter-btn-game">Essayer</button>
+        <label for="test-solution">Je pense avoir trouvé le mot!</label>
+        <input type="text" name="test-solution" id="test-solution-game" />
+        <button id="test-solution-btn-game">Essayer</button>
+          <ul id="tries-game"></ul>
+          <p id="answer-game" class="answer"></p>
+        <div id="dead-game" class="dead-container">
+          <div class="dead-part part-0"></div>
+          <div class="dead-part part-1"></div>
+          <div class="dead-part part-2"></div>
+          <div class="dead-part part-3"></div>
+          <div class="dead-part part-4"></div>
+          <div class="dead-part part-5"></div>
+          <div class="dead-part part-6"></div>
+          <div class="dead-part part-7"></div>
+          <div class="dead-part part-8"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/Pendu.js"></script>
+    <script src="js/PenduVue.js"></script>
+    <script>
+      var game = new Pendu("game");
+    </script>
+  </body>
+</html>
