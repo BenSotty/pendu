@@ -151,15 +151,6 @@ PenduVue.prototype.notValidTry = function (letter) {
 };
 
 /**
- * Feedback visuel lors d'une saisie déjà réalisée antérieurement
- * @param letter
- */
-
-PenduVue.prototype.alreadyTried = function (letter) {
-  this.resetInputs.call(this);
-};
-
-/**
  * Feedback visuel lors d'un test de lettre un fructueux
  * @param letter
  * @param tries
