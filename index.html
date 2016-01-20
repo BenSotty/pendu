@@ -24,7 +24,7 @@
         <label for="test-solution">Je pense avoir trouvé le mot!</label>
         <input type="text" name="test-solution" id="test-solution-game" />
         <button id="test-solution-btn-game">Essayer</button>
-          <ul id="tries"></ul>
+          <ul id="tries-game"></ul>
           <p id="answer-game" class="answer"></p>
         <div id="dead-game" class="dead-container">
           <div class="dead-part part-0"></div>
@@ -41,6 +41,7 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/model.js"></script>
+    <script src="js/Pendu.js"></script>
     <script src="js/PenduVue.js"></script>
     <script>
       var game = new Pendu("game");
