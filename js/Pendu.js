@@ -77,7 +77,6 @@ Pendu.prototype.testLetter = function () {
     }
     this.vue.refresh.call(this.vue, this.answer, this.tries, this.errors);
   } else {
-    this.errors++;
     this.vue.notIn.call(this.vue, letter, this.tries, this.errors);
   }
   this.checkState.call(this);
